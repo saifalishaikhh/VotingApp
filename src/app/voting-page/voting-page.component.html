@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <h1 class="text-center">Voting</h1>
+
+    <form  #votedata="ngForm" (ngSubmit)="vote(votedata.value)" class="row g-3 needs-validation" novalidate>
+
+    <div class="form-check">
+        <input class="form-check-input" ngModel value="1" type="radio" name="Candidate" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+           Candidate 1
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" ngModel value="2" type="radio" name="Candidate" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+            Candidate 2
+        </label>
+    </div>
+    
+    <div class="form-check">
+        <input class="form-check-input" ngModel value="3" type="radio" name="Candidate" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+           Candidate 3
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" ngModel value="4" type="radio" name="Candidate" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+            Candidate 4
+        </label>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-primary">Vote</button>
+    </div>
+    </form>
+</div>

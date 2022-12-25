@@ -1,0 +1,27 @@
+<div  class="container">
+    <form #RegisterData="ngForm" (ngSubmit)="Register(RegisterData.value)" class="row g-3 needs-validation" novalidate>
+        <div class="mb-3 mt-5">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" ngModel name="userName" class="form-control" id="validationCustom2"  value="Mark" placeholder="Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" ngModel name="email" class="form-control" id="exampleFormControlInput1"
+                placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="inputPassword2" class="form-label">Password</label>
+            <input type="password" ngModel name="password" autocomplete="on" class="form-control" id="inputPassword2"
+                placeholder="Password">
+        </div>
+        <div class="mb-3">
+            <label for="validationCustom01" class="form-label">Phone</label>
+            <input type="text" ngModel name="phone" class="form-control" id="validationCustom01"  value="Mark" placeholder="Phone" required>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary">Sign Up</button>
+
+        </div>
+        <a class="cursor" routerLink="">Already Have account Click to login</a>
+    </form>
+</div>
